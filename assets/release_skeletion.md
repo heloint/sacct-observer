@@ -14,12 +14,14 @@
 ---
 
 # Installation from source
-[placeholder]
+https://github.com/heloint/sacct-observer?tab=readme-ov-file#installation-source
 
 ---
 
 # Using pre-built binaries
 Download the corresponding binary to your system from the assets below and put it into your PATH to make it a globally available executable.
+
+*NOTE: Ensure that your system has a globally installed and available SSH and SQLITE3 client.*
 
 *EXAMPLE:*
 ```bash

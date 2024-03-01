@@ -21,6 +21,8 @@ Download the corresponding binary to your system from the assets below and put i
 
 [Download binary here](https://github.com/heloint/sacct-observer/releases/latest)
 
+*NOTE: Ensure that your system has a globally installed and available SSH and SQLITE3 client.*
+
 *EXAMPLE:*
 ```bash
 mkdir -p ~/.local/bin
@@ -50,6 +52,8 @@ rm -r /tmp/sacct-observer \
 ---
 
 # Installation from source <a id="installation-source"/>
+
+*NOTE: Ensure that your system has a globally installed and available SSH and SQLITE3 client.*
 
 ## 1. Clone the repository <a id="clone-repository" />
 
