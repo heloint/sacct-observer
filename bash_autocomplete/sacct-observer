@@ -1,0 +1,23 @@
+#!/bin/bash
+
+_sacct-observer() {
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="--output-sqlite-db \
+          --remote-address \
+          --update-once \
+          --update-frequency \
+          --username"
+
+    if [[ ${cur} == -* ]] ; then
+        COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+        return 0
+    else
+        COMPREPLY=($( ls ))
+    fi
+}
+
+complete -F _sacct-observer sacct-observer
+  
